@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import '_heading';
+@import '_text';
+
+.introduction {
+  &__arrow {
+    @apply relative;
+
+    &::before, &::after {
+      @apply absolute bg-gray w-[7px] h-[40px] origin-bottom rounded bottom-0 left-1/2;
+
+      content: '';
+    }
+
+    &::before {
+      transform: translateX(-80%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateX(-10%) rotate(-45deg);
+    }
+  }
+}
+
+.section {
+  @apply relative;
+  &__shapes {
+    @apply absolute left-0 top-0 w-[117px] h-full;
+
+    span {
+      @apply absolute top-0 left-0 w-full rounded-b-full;
+
+      &:first-child {
+        @apply rounded-none;
+      }
+    }
+  }
+}

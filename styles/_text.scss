@@ -1,0 +1,16 @@
+.text {
+  @apply text-white text-[18px];
+  font-family: 'Jost', sans-serif;
+
+  &--secondary {
+    @apply text-secondary;
+  }
+
+  &--semibold {
+    @apply font-semibold;
+  }
+
+  &--justify {
+    @apply text-justify;
+  }
+}

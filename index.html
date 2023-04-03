@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;900&family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main>
+      <section class="introduction h-screen max-h-screen bg-gray relative">
+        <div class="p-[50px] h-full">
+          <span class="block w-full h-[7px] bg-secondary rounded-full mb-[40px]"></span>
+
+          <div class="grid grid-cols-2 gap-x-[10px] pb-[50px] h-full">
+            <div>
+              <div class="w-full flex justify-between mb-[110px]">
+                <div class="flex flex-col gap-y-[15px] cursor-pointer">
+                  <span class="block w-[83px] h-[8px] bg-secondary rounded-full"></span>
+                  <span class="block w-[41px] h-[8px] bg-secondary rounded-full"></span>
+                  <span class="block w-[67px] h-[8px] bg-secondary rounded-full"></span>
+                </div>
+                <img src="assets/introduction_logo.png" alt="Logo" />
+              </div>
+
+              <div>
+                <h1 class="heading heading--lg">
+                  Alexandre Clausel, <br />
+                  photographe:<br />
+                  <span class="heading heading--xs">
+                    les paysages urbains de Troyes.
+                  </span>
+                </h1>
+              </div>
+            </div>
+            <div class="h-full w-full bg-cover" style="background-image: url('assets/introduction_shapes.png');"></div>
+          </div>
+        </div>
+
+        <div class="absolute left-0 bottom-0 h-[130px] w-[117px] rounded-tr-[58px] bg-secondary flex justify-center items-center cursor-pointer">
+            <span class=" introduction__arrow block bg-gray h-[54px] w-[7px] rounded-full"></span>
+        </div>
+      </section>
+
+      <section class="section bg-primary">
+        <div class="bg-gray rounded-bl-[150px] overflow-hidden relative">
+          <div class="section__shapes">
+            <span class="h-full bg-tertiary-light"></span>
+            <span class="h-[80%] bg-primary"></span>
+            <span class="h-[25%] bg-primary-light"></span>
+            <span class="h-[15%] bg-secondary"></span>
+          </div>
+
+          <img class="absolute right-0 top-[8%] z-0" src="assets/introduction_portrait.png" alt="Portrait" />
+          <div class="p-[50px] relative z-10">
+            <span class="block w-full h-[7px] bg-secondary rounded-full mb-[100px]"></span>
+
+            <div class="pl-[187px]">
+              <div class="w-full flex justify-between mb-[200px]">
+                <div class="flex flex-col gap-y-[15px] cursor-pointer">
+                  <span class="block w-[83px] h-[8px] bg-secondary rounded-full"></span>
+                  <span class="block w-[41px] h-[8px] bg-secondary rounded-full"></span>
+                  <span class="block w-[67px] h-[8px] bg-secondary rounded-full"></span>
+                </div>
+                <img src="assets/introduction_logo.png" alt="Logo" />
+              </div>
+
+              <div class="mb-[50px]">
+                <h2 class="heading heading--secondary heading--lg">Introduction</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden">
+          <div class="pl-[117px] pt-[60px] max-w-[1050px]">
+            <h2 class="heading heading--tertiary">Alexandre Clausel</h2>
+            <p class="text max-w-[860px]">Troyes, comme la plupart des autres villes, a subi beaucoup de transformations dans son paysage au cours de son histoire. Ces transformations ont notamment été documentées par Alexandre Clausel (1802-1884), photographe, peintre et dessinateur troyen. Au XIXème siècle, les peintres et chimistes s’emparent de la photographie et cherchent à améliorer les techniques. Dans la suite de Gustave Le Gray, Alexandre Clausel utilise le négatif sur collodion humide et les tirages sur papier salé et albuminé. Cela résulte à plus de 400 photographies et négatifs sur verre, pris entre 1852 et 1854, conservés au musée des Beaux-Arts de la ville de Troyes. Grâce à la numérisation de ce fonds, il est possible aujourd’hui d’exposer virtuellement ces photographies, trop fragiles pour être présentées autrement. Ainsi, cette exposition virtuelle vous invite à découvrir la ville de Troyes au XIXème siècle, à travers ses édifices religieux et civils, ses fortifications et son architecture.
+            </p>
+
+          </div>
+          <img class="absolute top-0 right-0 -translate-y-[2px]" src="assets/architecture_motif.png" alt="Motif" />
+        </div>
+      </section>
+
+      <section class="fortification bg-secondary pb-[100px]">
+        <div class="bg-gray rounded-l-[150px] overflow-hidden relative">
+          <div class="section__shapes">
+            <span class="h-full bg-tertiary-light"></span>
+            <span class="h-[80%] bg-primary"></span>
+            <span class="h-[25%] bg-primary-light"></span>
+            <span class="h-[15%] bg-secondary"></span>
+          </div>
+
+          <div class="ml-[187px]">
+            <div class="grid grid-cols-12">
+              <div class="col-span-4"></div>
+              <div class="col-span-8">
+                <div class="w-full flex justify-end">
+                  <img class="-translate-y-[30%]" src="assets/fortifications_shapes.png" alt="Formes géométriques" />
+                </div>
+
+                <div>
+                  <h2 class="heading heading--lg mb-[30px]">
+                    Les fortifications
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-[40px] mx-[117px]">
+          <div class="grid grid-cols-2 gap-y-[40px]">
+            <div>
+              <p class="text">
+                Au milieu du XIXème siècle, les fortifications médiévales de Troyes ne sont plus que des ruines. Elles n’ont plus d’utilité militaire, elles sont donc détruites au fur et à mesure du temps. Alexandre Clausel photographie les derniers remparts qui subsistent au début des années 1850.<br /><br />
+
+                Ces fortifications empêchent l’expansion de la ville qui s’agrandit rapidement à cette époque, du fait de l’industrialisation mais aussi du courant hygiéniste qui gagne la plupart des grandes villes.<br /><br />
+
+                On trouve notamment d’anciennes portes, ponts et tours qui parsèment le pourtour du bouchon et qui délimitaient autrefois les limites de la cité tricasse.
+              </p>
+            </div>
+
+            <div style="background: url('assets/fortifications_arg1.png')">
+            </div>
+
+            <div>
+              <img src="assets/fortifications_image1.png" class="w-full" alt="Image fortifications" />
+            </div>
+
+            <div>
+              <div class="p-[25px] bg-[#d9d9d9] bg-opacity-80 rounded-[30px] -translate-x-[15%] translate-y-[30%]">
+                <p class="text text--secondary text--semibold text--justify">Située à l’ouest du bouchon, cette porte donnait sur la ville voisine de Sainte-Savine. Il y avait à l’origine deux tours, une de chaque côté de la porte, et un pont-levis. Cette porte était très représentative de l’architecture militaire, massive et rectiligne. Ici il ne reste plus que les parties basses et les fondations, qui disparaissent quelques années plus tard, en 1857.</p>
+              </div>
+            </div>
+
+            <div class="relative z-10">
+              <div class="p-[25px] bg-[#d9d9d9] bg-opacity-80 rounded-[30px] translate-x-[50%]">
+                <p class="text text--secondary text--semibold text--justify">Alexandre Clausel, Troyes, promenade dans l'ancien fossé entre le théâtre et le fort Chevreuse, actuel jardin de la vallée suisse, tirage photographique, les jardins deviennent au XIX° siècle partie intégrante du paysage urbain. On distingue deux types d’organisation de jardin : les jardins réguliers, ou à la française, et les jardins irréguliers, à l’anglais. Ici le jardin de la vallée suisse s’inspire des jardins à l’anglaise, par ses courbes et ses vallonnements. L’aménagement essaie de reproduire l’aspect naturel d’une vallée suisse.</p>
+              </div>
+            </div>
+
+            <div class="relative h-full w-full">
+              <img class="absolute z-0 bottom-[-50px] right-[10%]" src="assets/fortifications_image2.png" alt="Fortifications image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="architecture bg-tertiary pb-[50px]">
+        <div class="bg-gray rounded-l-[150px] overflow-hidden relative">
+          <div class="section__shapes">
+            <span class="h-full bg-tertiary-light"></span>
+            <span class="h-[80%] bg-primary"></span>
+            <span class="h-[25%] bg-primary-light"></span>
+            <span class="h-[15%] bg-secondary"></span>
+          </div>
+
+          <div class="ml-[187px]">
+            <div class="grid grid-cols-12">
+              <div class="col-span-8">
+                <h2 class="heading heading--lg mt-[80px]">Architecture</h2>
+              </div>
+              <div class="col-span-4 bg-left" style="background: url('assets/architecture_shapes.png')"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-[50px] px-[117px]">
+          <h3 class="heading heading--sm">La ville de Troyes</h3>
+          <p class="text text--secondary">
+            La ville de Troyes conserve un patrimoine remarquable, présentant une architecture diverse mêlant maisons à pans de bois, maisons en damier champenois et hôtels particuliers. C’est le résultat de siècles d’évolution urbanistique, notamment des deux périodes prospères : le XVIe siècle grâce aux foires de Champagne et le XIXe siècle grâce à l’essor de l’industrie de la bonneterie.</p>
+        </div>
+
+        <img src="assets/architecture_frise.png" alt="Frise de formes géométriques" class="ml-[10px] my-[30px]" />
+
+        <div class="grid grid-cols-2 gap-x-[75px] mx-[117px]">
+          <div class="flex flex-col gap-y-[20px]">
+            <div>
+              <h3 class="heading heading--sm">XVIe</h3>
+              <p class="text text--secondary">
+                La quasi-totalité des maisons à pans de bois de la ville de Troyes ont été construites après le grand incendie de 1524. Cet incendie détruisit un quart de la ville en ravageant notamment le quartier le plus cossu de la cité, celui des riches marchands. Les plus fortunés en profitèrent pour reconstruire en pierre de magnifiques hôtels particuliers comme l’hôtel de Chapelaines ou l’hôtel Marisy. Les moins aisés reconstruisirent à l’identique, sur le même plan cadastral.
+              </p>
+            </div>
+
+            <div class="relative">
+              <img src="assets/architecture_image1.png" alt="Image architecture" />
+
+              <div class="w-[361px] p-[20px] bg-[#D9D9D9CC] rounded-[30px] absolute top-[20px] right-[100px]">
+                <p class="text text--secondary text--semibold">
+                  Située rue Kléber, cette maison dénommée du Chapeau Vert remonte à 1553. Elle fut détruite en 1945 à la suite de l’explosion d’un convoi de munitions.
+                </p>
+              </div>
+            </div>
+
+            <div class="w-full flex justify-end">
+              <div class="relative">
+                <img src="assets/architecture_image2.png" alt="Image architecture" />
+
+                <div class="w-[411px] p-[20px] bg-[#D9D9D9CC] rounded-[30px] absolute bottom-[20px] right-[80%]">
+                  <p class="text text--secondary text--semibold">
+                    Construit en 1550 sur les ruines de l’incendie de 1524, cet hôtel est acheté en 1556 par Jean de Mauroy, écuyer et seigneur. L’Hôtel de Mauroy reprend les différentes architectures typiques troyennes avec une partie en damier champenois et une autre aile en pans de bois. Depuis 1966, l’Hôtel de Mauroy accueille la Maison de l’Outil et de la Pensée Ouvrière dirigée par l’association ouvrière des Compagnons du Devoir et du Tour de France.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-y-[20px] justify-between">
+            <div>
+              <div>
+                <h3 class="heading heading--sm">XIXe</h3>
+                <p class="text text--secondary">
+                  Lorsqu’Alexandre Clausel réalise ses prises de vue, nous sommes entre 1852 et 1854 et donc au cœur de l’expansion de la bonneterie industrielle. Cet essor déclenche l’éclosion d’une bourgeoisie locale, propriétaire de grandes usines. Celle-ci affirme alors sa richesse en faisant construire des maisons bourgeoises comme des hôtels particuliers et villas, la plupart étant des commandes à des architectes troyens ou parisiens.
+                </p>
+              </div>
+
+              <div class="flex justify-end">
+                <div class="relative">
+                  <img src="assets/architecture_image3.png" alt="Image architecture" />
+
+                  <div class="w-[400px] p-[20px] bg-[#D9D9D9CC] rounded-[30px] absolute top-[55%] right-[80%]">
+                    <p class="text text--secondary text--semibold">
+                      La maison Mahieu, située dans le parc des Moulins, est érigée en 1854 par Mr Mahieu, propriétaire des moulins avoisinants. De style néo-classique, cette villa reprend des matériaux caractéristiques du XIXe siècle comme la brique et l’ardoise. La maison bourgeoise est inoccupée depuis 2000 après le décès de son dernier propriétaire. Elle est rachetée en 2017 par la mairie pour devenir d’ici 2024 un centre de ressources pour l’enfance et la jeunesse, rénovation qui respectera l’architecture d’origine.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img src="assets/architecture_frise2.png" alt="Frise de formes géométriques" class="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
