@@ -1,0 +1,20 @@
+.swiper {
+  .swiper-slide {
+    @apply flex justify-center items-center h-auto overflow-hidden;
+    img {
+      @apply h-full rounded-[30px] w-full max-h-[600px] object-contain;
+    }
+  }
+
+  .swiper-pagination {
+    @apply static flex items-center justify-center gap-x-[8px] mt-[10px];
+
+    &-bullet {
+      @apply w-[18px] h-[18px] bg-[#337D8AA6] rounded-full;
+    }
+
+    &-bullet-active {
+      @apply h-[24px] w-[24px] bg-primary;
+    }
+  }
+}
