@@ -14,6 +14,7 @@
   "dependencies": {
     "@ryanmorr/ready": "^1.4.1",
     "autoprefixer": "^10.4.14",
+    "gsap": "^3.11.5",
     "postcss": "^8.4.21",
     "sass": "^1.60.0",
     "swiper": "^9.2.0",
