@@ -41,3 +41,61 @@
     }
   }
 }
+
+section {
+  @apply relative;
+
+  &::before {
+    @apply absolute left-0 top-0 w-full h-[200px];
+    content: '';
+  }
+}
+
+.fortification {
+  &::before {
+    @apply bg-tertiary;
+  }
+}
+
+.architecture {
+  &::before {
+    @apply bg-primary;
+  }
+}
+
+.religieux {
+  &::before {
+    @apply bg-secondary;
+  }
+}
+
+.lieux {
+  &::before {
+    @apply bg-primary-light;
+  }
+}
+
+.conclusion {
+  &::before {
+    @apply bg-secondary;
+  }
+}
+
+.description {
+  @apply underline relative cursor-pointer;
+
+  .descriptif {
+    @apply hidden absolute bottom-full left-1/2 -translate-x-[50%] -translate-y-[10px] w-[350px] bg-white rounded-lg shadow-lg p-2 bg-secondary text-white z-[150];
+
+    &::before {
+      @apply absolute bottom-0 left-1/2 -translate-x-[50%] rotate-[45deg] translate-y-[50%] -z-10 w-[15px] h-[15px] bg-secondary;
+      content: '';
+    }
+  }
+
+  &:hover {
+    .descriptif {
+      @apply block;
+    }
+  }
+}
