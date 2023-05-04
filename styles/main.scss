@@ -7,6 +7,12 @@
 @import '_text';
 @import '_swiper';
 
+body {
+  @apply overflow-x-hidden;
+
+  max-width: 100vw;
+}
+
 .introduction {
   &__arrow {
     @apply relative;
@@ -32,6 +38,10 @@
   &__shapes {
     @apply absolute left-0 top-0 w-[117px] h-full;
 
+    @media (max-width: theme('screens.lg')) {
+      @apply w-[50px]
+    }
+
     span {
       @apply absolute top-0 left-0 w-full rounded-b-full;
 
@@ -46,8 +56,12 @@ section {
   @apply relative;
 
   &::before {
-    @apply absolute left-0 top-0 w-full h-[200px];
+    @apply absolute left-0 top-0 w-full h-[150px];
     content: '';
+
+    @screen lg {
+      @apply h-[200px];
+    }
   }
 }
 
