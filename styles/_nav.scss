@@ -1,0 +1,43 @@
+.nav {
+    @apply fixed z-50 left-1/2 -translate-x-1/2 top-[100px] flex w-0;
+    transition: all 300ms ease;
+
+    &__link {
+        @apply text--secondary text-[24px] relative;
+
+        &--active {
+            @apply font-bold;
+        }
+
+        &::after {
+            @apply absolute left-0 bottom-0 translate-y-[5px] bg-secondary h-[3px] w-0 transition-all;
+            content: '';
+        }
+
+        &:hover {
+            &::after {
+                @apply w-full;
+            }
+        }
+    }
+
+    &__close {
+        @apply absolute top-1/2 -translate-y-1/2 right-[50px] cursor-pointer;
+
+        span {
+            @apply absolute left-0 top-0 block bg-secondary w-[40px] h-[5px] rounded-full;
+
+            &:nth-child(1) {
+                @apply rotate-[45deg];
+            }
+
+            &:nth-child(2) {
+                @apply -rotate-[45deg];
+            }
+        }
+    }
+
+    &--active {
+        width: 70%;
+    }
+}

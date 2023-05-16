@@ -10,7 +10,25 @@
     <title>Vite App</title>
   </head>
   <body>
-    <main>
+    <main x-data="{open: false}">
+      <nav x-show="open" :class="open ? 'nav--active' : ''" class="nav">
+        <div class="bg-white px-[25px] py-[20px] w-full rounded flex justify-center">
+          <div class="flex gap-x-[50px] -ml-[25px]">
+            <a href="#">
+              <span class="nav__link nav__link--active">Accueil</span>
+            </a>
+            <a href="#">
+              <span class="nav__link">Gallerie</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="nav__close" @click="open = false">
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
       <section class="introduction h-screen max-h-screen bg-gray relative">
         <div class="p-[50px] h-full">
           <span class="block w-full h-[7px] bg-secondary rounded-full mb-[40px]"></span>
@@ -18,7 +36,7 @@
           <div class="grid grid-cols-2 gap-x-[10px] pb-[50px] h-full">
             <div>
               <div class="w-full flex justify-between mb-[110px]">
-                <div class="flex flex-col gap-y-[15px] cursor-pointer">
+                <div class="flex flex-col gap-y-[15px] cursor-pointer relative z-20" @click="open = true">
                   <span class="block w-[83px] h-[8px] bg-secondary rounded-full"></span>
                   <span class="block w-[41px] h-[8px] bg-secondary rounded-full"></span>
                   <span class="block w-[67px] h-[8px] bg-secondary rounded-full"></span>
@@ -31,7 +49,7 @@
                   Alexandre Clausel, <br />
                   photographe<br />
                   <span class="heading heading--xs">
-                    les paysages urbains de Troyes.
+                    les paysages urbains de Troyes
                   </span>
                 </h1>
               </div>
@@ -60,7 +78,7 @@
 
             <div class=" pl-[50px] lg:pl-[187px]">
               <div class="w-full flex justify-between items-center lg:mb-[200px]">
-                <div class="flex flex-col gap-y-[15px] cursor-pointer">
+                <div class="flex flex-col gap-y-[15px] cursor-pointer" @click="open = true">
                   <span class="block w-[83px] h-[8px] bg-secondary rounded-full"></span>
                   <span class="block w-[41px] h-[8px] bg-secondary rounded-full"></span>
                   <span class="block w-[67px] h-[8px] bg-secondary rounded-full"></span>
@@ -71,6 +89,12 @@
               <!-- <div class="mb-[50px]">
                 <h2 class="heading heading--secondary heading--lg">Introduction</h2>
               </div> -->
+              <p class="text text--secondary">Ce projet professionnel est réalisé par Marie Jozwiak et Anaïs
+                Richard, étudiantes en Master Patrimoines et Musées, à l'Université de
+                Reims Champagne-Ardenne / Campus des Comtes de Champagne, en
+                collaboration avec les Musées de la ville de Troyes et les étudiants
+                de la licence Métiers du Mutimédia et de l'Internet de l’Institut
+                Universitaire Technologique de Troyes (IUT).</p>
             </div>
           </div>
         </div>
