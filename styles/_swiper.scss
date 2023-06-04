@@ -1,8 +1,13 @@
 .swiper {
   .swiper-slide {
-    @apply flex justify-center items-center h-auto overflow-hidden;
+    @apply flex flex-col justify-center items-center h-auto overflow-hidden;
+
+    p {
+      @apply italic max-w-[450px];
+    }
+
     img {
-      @apply h-full rounded-[30px] w-full max-h-[600px] object-contain;
+      @apply max-h-[300px] rounded-[30px] w-full object-contain;
     }
   }
 
