@@ -91,9 +91,7 @@ section {
 }
 
 .conclusion {
-  &::before {
-    @apply bg-secondary;
-  }
+  @apply bg-primary;
 }
 
 .description {
